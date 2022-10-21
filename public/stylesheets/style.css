@@ -1,0 +1,161 @@
+body {
+  margin: 0;
+  background-color: rgb(39, 39, 39);
+  display: flex;
+  justify-content: center;
+  font-family: "Courier New", Courier, monospace;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#canvas {
+  margin-top: 25px;
+  z-index: 10;
+}
+
+/* Montior and Larger */
+@media screen and (min-width: 1800px) {
+  canvas {
+    margin-top: 100px;
+  }
+}
+
+/* Large Smartphone (Vertical) */
+@media screen and (max-width: 500px) {
+  canvas {
+    width: 100%;
+    height: 700px;
+    margin-top: 50px;
+  }
+}
+
+.container{
+  display: flex;
+  position: absolute;
+  z-index: +100;
+  height: 400px;
+  width: 500px;
+  background-color: white;
+  border: 2px solid gold;
+  border-radius: 2em;
+  left: 50%;
+  top: 50%;
+  overflow: hidden;
+  transform: translate(-50%,-50%);
+}
+
+.header{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 10px;
+  /* width: 100%;
+  height: 100%; */
+  background-color: gold;
+}
+
+.box{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 1px;
+  width: 100%;
+  border: 2px solid gold;
+  border-radius: 2em;
+  height: 100%;
+  background-color: blue;
+}
+
+.btn-style{
+  background-color: skyblue;
+  padding: 10px;
+  font-size: 14px;
+  font-family: sans-serif;
+  width: 100px;
+  font-weight: 700;
+  margin-top: 10px;
+ 
+}
+
+.btn-style:hover{
+  background-color: gold;
+  cursor: pointer;
+  color: aliceblue;
+}
+
+
+
+
+h1{
+  
+  font-family: sans-serif;
+  color: aliceblue;
+}
+
+.header-btn{
+  background-color: skyblue;
+  padding: 10px;
+  font-size: 14px;
+  font-family: sans-serif;
+  width: 100px;
+  font-weight: 700;
+}
+.header-btn:hover{
+  background-color: gold;
+  cursor: pointer;
+  color: aliceblue;
+}
+
+.active-btn{
+  background-color: gold;
+  color: aliceblue;
+}
+
+.action-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.box-room{
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  height: 100%;
+  
+}
+
+.active-box-room{
+  display: flex;
+}
+
+.roomId-share{
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 50%;
+  color: black;
+  font-family: sans-serif;
+  font-weight: 700;
+  background-color: lightgreen;
+}
+
+span{
+  color: red;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+}
+
+.active-roomId{
+  display: flex;
+}

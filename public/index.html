@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pong Game</title>
+    <link rel="icon" type="image/png" href="https://s2.googleusercontent.com/s2/favicons?domain=www.jacinto.design">
+    <link rel='stylesheet' href='stylesheets/style.css' />
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="header">
+
+                <div class="header-btn active-btn">
+                    Random
+                </div>
+                <div class="header-btn">
+                    Join Room
+                </div>
+                <div class="header-btn">
+                    Create Room
+                </div>
+            </div>
+            <div class="action-box">
+                <div class="random-box box-room active-box-room">
+                    <h1>Start Game</h1>
+                    <label for="join">Enter Your Name</label>
+                    <input id="random-name" type="text" name="name">
+                    <span id="error-name-random"></span>
+                    <button class="btn-style" id="startWithRondom">Start Game</button>
+                </div>
+                <div class="join-room-box box-room ">
+                    <h1>Join Room</h1>
+                    <label for="join">Enter Your Name</label>
+                    <input id="join-name" type="text" name="join-name">
+                    <span id="error-name-join"></span>
+                    
+                    
+                    <label for="join">Enter room id</label>
+                    <input id="join-room-id" type="text" name="join">
+                    <span id="error-Id-join"></span>
+                    <button class="btn-style" id="joinRoombtn">Join Room</button>
+                </div>
+                <div class="create-room-box box-room ">
+                    <h1>Create Game</h1>
+                    <label for="join">Enter Your Name</label>
+                    <input id="creator-name" type="text" name="name">
+                    <span id="error-name"></span>
+
+
+                    <button class="btn-style" id="create-room-btn">Create Room</button>
+                    <div class="roomId-share">
+
+                        <h3 id="RoomId-text"> 
+                           
+                        </h3>
+                        <button class="btn-style" id="startCreateRoombtn">Start Game</button>
+                    </div>
+                </div>
+               
+
+            </div>
+        </div>
+        
+    </div>
+    <!-- Script -->
+    <script src="https://cdn.socket.io/socket.io-3.0.5.js" crossorigin="anonymous"></script>
+    <script src="javascripts/script.js"></script>
+</body>
+</html>
