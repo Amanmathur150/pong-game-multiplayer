@@ -27,6 +27,7 @@ pongNameSpace.on("connection", (socket) => {
   let playerName;
   socket.on("ready", (readyData) => {
     // opponentplayerName
+    console.log("Testing github")
     if (readyData.roomId) {
       let isDonehere = false;
       roomList.forEach((room, index) => {
